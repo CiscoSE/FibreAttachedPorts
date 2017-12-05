@@ -169,7 +169,7 @@ def sdkThread(name, val):
         return
 
     ### Set a short Application description.
-    sdk.setAppDesc('Netsuite Python App')
+    sdk.setAppDesc('FibrePorts Python App')
 
     ###
     # To Create & Manage Custom syslogs one must do
