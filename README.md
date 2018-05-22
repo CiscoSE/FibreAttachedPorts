@@ -1,6 +1,6 @@
 # FibreAttachedPorts
 
-The FibreAttachedPorts application is built for the Cisco NX-OS range of Data Center switches (Nexus 9000).  
+The FibreAttachedPorts application is built for the Cisco NX-OS range of Data Center switches (Nexus 9000) .
 
 ## Basic Operation
 
