@@ -20,7 +20,7 @@ or implied.
 """
 
 
- __author__ = "Simon Hart <sihart@cisco.com>"
+__author__ = "Simon Hart <sihart@cisco.com>"
 
 
 
@@ -93,10 +93,6 @@ class pyCmdHandler(nx_sdk_py.NxCmdHandler):
 
 
         if "show_fibre" in clicmd.getCmdName():
-            ptpclock = cliP.execShowCmd("show ptp clock", nx_sdk_py.R_JSON)
-            jsonclock = json.loads(ptpclock)
-            printstr = str(jsonclock["offset-from-master"])
-            clicmd.printConsole("\nThe current ptp offset from master is at %s \n\n" % printstr)
 
             resp_str1 = cliP.execShowCmd("show interface brief", nx_sdk_py.R_JSON)
             resp_str2 = cliP.execShowCmd("show interface transceiver details", nx_sdk_py.R_JSON)
@@ -143,7 +139,7 @@ class pyCmdHandler(nx_sdk_py.NxCmdHandler):
 
                 except KeyError:
                     intdict[i["interface"]].update({"fibre": "No Fibre"})
-                    intdict[i["interface"]].update({"rx_pwr": '0'})
+                    intdict[i["interface"]].update({"rx_pwr": 'N/A'})
 
             #Print out titles
             clicmd.printConsole('{:17}{:10}{:17}{:17}{:14}{:17}{:17}'.format('INTERFACE', 'STATE', 'SFP', 'FIBRE', 'POWER', 'NAME', 'TYPE\n'))
