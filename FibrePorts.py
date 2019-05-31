@@ -3,13 +3,13 @@
 # -*- coding: utf-8 -*-
 
 """
-Copyright (c) 2018  Cisco and/or its affiliates.
+Copyright (c) 2019 Cisco and/or its affiliates.
 
 This software is licensed to you under the terms of the Cisco Sample
 Code License, Version 1.0 (the "License"). You may obtain a copy of the
 License at
 
-https://developer.cisco.com/docs/licenses
+               https://developer.cisco.com/docs/licenses
 
 All use of the material herein must be in accordance with the terms of
 the License. All rights not expressly granted by the License are
@@ -18,7 +18,6 @@ writing, software distributed under the License is distributed on an "AS
 IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 or implied.
 """
-
 
 __author__ = "Simon Hart <sihart@cisco.com>"
 
@@ -66,7 +65,7 @@ def timerThread(name, val):
         if tmsg:
             ### Logs a event log everytime timer is kicked once tmsg
             ### is initialized.
-            tmsg.event("Netsuite Timer ticked - %d" % count)
+            tmsg.event("FibrePorts Timer ticked - %d" % count)
 
         time.sleep(120)
 
